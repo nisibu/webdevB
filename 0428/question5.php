@@ -53,3 +53,21 @@ $num2 = [10, 20, 30];
 foreach ($num2 as $value) {
     echo $value * 2 . '<br>';
 }
+
+// サンリオキャラクターの配列を作成
+$sanrio_characters = [
+    'ハローキティ',
+    'マイメロディ',
+    'シナモロール',
+    'ポムポムプリン',
+    'クロミ',
+    'リトルツインスターズ',
+    'ぐでたま',
+    'ポチャッコ',
+    'けろけろけろっぴ',
+    'バッドばつ丸'
+];
+
+foreach ($sanrio_characters as $value) {
+    echo $value . '<br>';
+}
