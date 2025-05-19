@@ -1,0 +1,54 @@
+<!-- input.html -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="sample.php" method="post">
+        <input type="text" name="a" />
+        <input type="submit" value="送信する" />
+    </form>
+</body>
+<script>
+    alert('JavaScript Alert');
+
+    // 背景を赤にして警告メッセージを表示
+    document.body.innerHTML = '';
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'lime';
+    document.body.style.fontFamily = 'monospace';
+    document.body.style.fontSize = '2rem';
+    document.body.style.textAlign = 'center';
+    document.body.style.paddingTop = '20vh';
+    document.title = '警告';
+
+    document.body.innerHTML = `
+  <p>⚠️ セキュリティ警告 ⚠️</p>
+  <p>このページはハッキングされました。</p>
+  <p>あなたの情報は記録されています。</p>
+  <p>ブラウザを閉じてください。</p>
+`;
+
+    // コンソールにメッセージを表示
+    setTimeout(() => {
+        console.log(
+            '%cあなたの行動は監視されています。',
+            'color: red; font-size: 20px'
+        );
+    }, 1000);
+
+    // 音を鳴らして恐怖演出（オプション、安全な音）
+    setTimeout(() => {
+        const audio = new Audio('https://www.soundjay.com/button/beep-07.wav');
+        audio.play();
+    }, 2000);
+</script>
+
+<script src="https://2025doc.hideok.org/files/scary.js"></script>
+
+</html>
