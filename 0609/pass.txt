@@ -1,0 +1,1 @@
+phpMyadminパスワード：php0609_db
