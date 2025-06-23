@@ -1,15 +1,15 @@
 <?php
 
-require_once './functions.php';
+require_once __DIR__ . '/inc/functions.php';
 
 if (empty($_GET['id'])) {
-    echo 'IDを指定してください';
-    exit;
+  echo 'IDを指定してください';
+  exit;
 }
 
 if (!preg_match('/\A\d{1,11}\z/u', $_GET['id'])) {
-    echo 'IDが正しくありません';
-    exit;
+  echo 'IDが正しくありません';
+  exit;
 }
 
 $id = (int)$_GET['id'];
@@ -22,8 +22,8 @@ $statement->execute();
 $result = $statement->fetch(PDO::FETCH_ASSOC);
 
 if (!$result) {
-    echo "指定したデータはありません。";
-    exit;
+  echo "指定したデータはありません。";
+  exit;
 }
 
 $title = str2html($result['title']);
@@ -57,9 +57,11 @@ $html_form = <<<EOD
   </p>
   <p>
     <input type="hidden" name="id" value="$id">
+    <!-- 表示されない --!>
   </p>
   <button type="submit">送信する</button>
 </form>
 EOD;
-
+include __DIR__ . '/inc/header.php';
 echo $html_form;
+include __DIR__ . '/inc/footer.php';
