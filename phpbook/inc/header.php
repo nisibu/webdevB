@@ -18,3 +18,6 @@
             <li><a href="./logout.php">ログアウト</a></li>
         </ul>
     </nav>
+</body>
+
+</html>

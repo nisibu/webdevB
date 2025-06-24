@@ -26,7 +26,6 @@ if (empty($_POST['username']) || empty($_POST['password'])) {
     echo 'ユーザー名とパスワードを入力してください。';
     exit;
 }
-
 try {
     $dbh = db_open();
     $sql = 'SELECT password FROM users WHERE username = :username';

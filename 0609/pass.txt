@@ -1,6 +1,6 @@
 user名：mdnuser
-password:It24219420050809
-ハッシュ値：$2y$10$ogquAOtBD33ypghp9UYV8uSbRG.UchH9xbanWwYWx7rL7SLzwOY4.
+password:it24219420050809
+ハッシュ値：$2y$10$CSIa0x0kL7tOsIsLcmHZsuoF7M0CcGwzHpd46yuGQ6BlV/PgAhF8a
 
 $user='phpuser'
 $phpMyadminパスワード：php0609_db
