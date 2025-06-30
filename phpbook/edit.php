@@ -1,8 +1,14 @@
-<?php require_once __DIR__ . '/login_check.php'; ?>
 <?php
+session_start();
+$token = bin2hex(random_bytes(20));
+$_SESSION['token'] = $token;
+?>
 
-require_once __DIR__ . '/inc/functions.php';
+<?php require_once __DIR__ . '/login_check.php'; ?>
+<?php include __DIR__ . '/inc/header.php'; ?>
+<?php require_once __DIR__ . '/inc/functions.php'; ?>
 
+<?php
 if (empty($_GET['id'])) {
   echo 'IDを指定してください';
   exit;
@@ -63,6 +69,5 @@ $html_form = <<<EOD
   <button type="submit">送信する</button>
 </form>
 EOD;
-include __DIR__ . '/inc/header.php';
 echo $html_form;
 include __DIR__ . '/inc/footer.php';
