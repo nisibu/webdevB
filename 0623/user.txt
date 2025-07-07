@@ -1,0 +1,10 @@
+bbsデータベース
+ユーザー名：bbs_user
+ホスト：localhost
+パスワード：0707_bbs242194
+
+ロリポップDB
+ホスト：mysql325.phy.lolipop.lan
+データベース名：LAA1606014-bbsdb
+ユーザー名：LAA1606014
+パスワード：php0609db
