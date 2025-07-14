@@ -5,11 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>掲示板</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <h1>掲示板</h1>
+    <h1>ちょっぴりおかしな掲示板</h1>
 
     <?php if (!empty($errors)): ?>
         <ul style="color:red;">
@@ -21,5 +22,6 @@
 
     <?php include __DIR__ . '/index.php'; ?>
 </body>
+
 
 </html>
